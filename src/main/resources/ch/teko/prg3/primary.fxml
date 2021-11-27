@@ -6,7 +6,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.teko.prg3.PrimaryController">
    <children>
-      <Button fx:id="b1" mnemonicParsing="false" onAction="#openBrowser" text="Button" />
+      <Button id="b1" fx:id="b1" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#openBrowser" />
       <Button fx:id="b2" mnemonicParsing="false" onAction="#openBrowser" text="Button" />
       <Button fx:id="b3" mnemonicParsing="false" onAction="#openBrowser" text="Button" />
    </children>

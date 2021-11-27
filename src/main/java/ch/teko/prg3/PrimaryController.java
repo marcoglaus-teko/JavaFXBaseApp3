@@ -21,6 +21,18 @@ public class PrimaryController {
     void openBrowser(ActionEvent event) throws IOException {
         Runtime rt = Runtime.getRuntime();
         String url = "https://youtube.com";
-        rt.exec("open " + url);
+
+        String os = getEnvironment();
+        System.out.println(os);
+
+        if (os.contains("win")){
+            rt.exec("rundll32 url.dll,FileProtocolHandler " + url);
+        }
+        else if (os.contains("mac"))
+            rt.exec("open " + url);
+    }
+
+    private String getEnvironment() {
+        return System.getProperty("os.name").toLowerCase();
     }
 }
