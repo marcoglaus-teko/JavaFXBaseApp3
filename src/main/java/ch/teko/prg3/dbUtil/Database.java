@@ -8,8 +8,10 @@ import java.sql.Statement;
 public class Database {
 
     public static final String DB_NAME = "kontakt.sqlite";
-    // Pfad zur DB
+    // Pfad zur DB --> mac / Linux
     public static final String PATH = "/Users/glausm/Desktop/";
+    // Pfad windows
+    // public static final String PATH = "C:\\Users\\glausm\\Desktop\\"
     public static final String CONNECTION_STRING = "jdbc:sqlite:" + PATH + DB_NAME;
 
     private Connection connection;
