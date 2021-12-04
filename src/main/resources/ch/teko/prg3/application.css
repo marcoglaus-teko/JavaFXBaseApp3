@@ -1,11 +1,16 @@
 .root {
-    -fx-background-color: blue;
+    -fx-background-color: #dbdfdc;
 }
 
-.button {
-    -fx-background-color: #00ccff;
+#button1 {
+    -fx-background-color: #4585d3;
 }
 
-#b1 {
-    -fx-background-image: url("youtube.jpg");
+
+#clearButton {
+    -fx-background-color: #d70f0f;
+}
+
+#c1 {
+    -fx-background-color: #d70f0f;
 }
